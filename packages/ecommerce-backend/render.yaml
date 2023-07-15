@@ -10,3 +10,4 @@ database:
   # Create DB for backend for the ecommerce
   - name: db_ecommerce
     databaseName: db_ecommerce
+    plan: free
