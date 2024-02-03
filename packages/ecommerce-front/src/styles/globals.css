@@ -45,7 +45,6 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
-
 }
 
 
@@ -59,7 +58,21 @@ body,
 
 
 .app-container {
-    min-height: 100%; /* Ocupa al menos toda la altura de la ventana */
+    min-height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+
+ :root {
+  --primary-color: #DB3022;
+  --secondary-color: #4F4F4F;
+  --padding-small-button: 8px 16px;
+  --padding-big-button:8px 32px;
+  --min-small-button:343px;
+  --min-big-button:160px;
+  --min-big-height-button:48px;
+  --min-small-height-button:16px;
+  --border-radius-buttom:16px;
+  --font-family:'Inter', sans-serif;
 }

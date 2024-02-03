@@ -4,10 +4,10 @@ import styles from './MainContainer.module.css'
 import { useMainContainer } from './useMainContainer';
 
 export const MainContainer = () => {
-    const { image, title } = useMainContainer()
+    const { image, title, description } = useMainContainer()
     return (
         <div className={styles.container}>
-            <CategoryCard title={title} image={image} />
+            <CategoryCard title={title} image={image} description={description} />
         </div>
     )
 }
