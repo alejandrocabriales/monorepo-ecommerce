@@ -1,0 +1,71 @@
+  
+.product {
+  --img-scale: 1.001;
+  --title-color: black;
+  --link-icon-translate: -20px;
+  --link-icon-opacity: 0;
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  transform-origin: center;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  min-width: 250px;
+  box-shadow: rgba(190, 190, 190, 0.25) 0px 1px 3px 0px, rgba(219, 227, 237, 0.4) 0px 20px 40px 0px;
+}
+
+/* Add link for all the card 's content */
+.product a::after {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: 0;
+  cursor: pointer;
+  content: "";
+}
+
+.product img {
+  max-width: 100%;
+  transform-origin: center;
+  transform: scale(var(--img-scale));
+  transition: transform 0.4s ease-in-out;
+}
+
+.product a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+/* using the has() relational pseudo selector to update our custom properties */
+.product:has(:hover, :focus) {
+  --img-scale: 1.1;
+  --link-icon-translate: 0;
+  --link-icon-opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+
+.figure {
+  margin: 0;
+  padding: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  position: relative;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 8px;
+}
+
+.description > div:nth-of-type(2){
+
+  align-items: center;
+}
+
+.details > div:first-of-type{
+margin-bottom: 10px;
+}

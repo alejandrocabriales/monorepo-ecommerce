@@ -18,6 +18,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background: radial-gradient(100% 50% at 50% 0%, rgba(0, 163, 255, 0.13) 0%, rgba(0, 163, 255, 0) 50%, rgba(0, 163, 255, 0) 100%);
+
 }
 /*
   5. Improve media defaults
@@ -43,4 +45,34 @@ p, h1, h2, h3, h4, h5, h6 {
 */
 #root, #__next {
   isolation: isolate;
+}
+
+
+html,
+body,
+#__next {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.app-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+ :root {
+  --primary-color: #DB3022;
+  --secondary-color: #4F4F4F;
+  --padding-small-button: 8px 16px;
+  --padding-big-button:8px 32px;
+  --min-small-button:343px;
+  --min-big-button:160px;
+  --min-big-height-button:48px;
+  --min-small-height-button:16px;
+  --border-radius-buttom:16px;
+  --font-family:'Inter', sans-serif;
 }

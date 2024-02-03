@@ -137,3 +137,4 @@ build/config\.gypi
 pnpm-lock.yaml
 
 *.build
+.env
